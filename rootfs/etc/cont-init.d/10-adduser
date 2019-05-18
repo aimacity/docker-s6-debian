@@ -1,19 +1,19 @@
 #!/usr/bin/with-contenv sh
 
-PUID=${PUID:-911}
-PGID=${PGID:-911}
+PUID=${PUID:-1000}
+PGID=${PGID:-1000}
 
-groupmod -o -g "$PGID" abc
-usermod -o -u "$PUID" abc
+groupmod -o -g "$PGID" aima
+usermod -o -u "$PUID" aima
 
 echo "
 -------------------------------------
 GID/UID
 -------------------------------------
-User uid:    $(id -u abc)
-User gid:    $(id -g abc)
+User uid:    $(id -u aima)
+User gid:    $(id -g aima)
 -------------------------------------
 "
-chown abc:abc /app
-chown abc:abc /config
-chown abc:abc /defaults
+chown aima:aima /app
+chown aima:aima /config
+chown aima:aima /defaults

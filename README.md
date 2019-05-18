@@ -9,5 +9,5 @@ See the [S6 Overlay Documentation](https://github.com/just-containers/s6-overlay
 x86_64:
 
 ```shell
-docker run oznu/s6-debian
+docker run aimactiy/s6-debian
 ```
